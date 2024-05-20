@@ -9,7 +9,7 @@ I will make this blog able to make posts anonymously without any attached locati
 
 <h1>Requirements</h1>
 
-This will require me to have a SQL Server what will store the account numbers. The account numbers will be randomly generated 32 character long number this makes sure for full authentication from brute force attacks and there will not be any stored passwords on the user as they will log in via their account number. A hosting service to host my web page on, a DNS server. And preventive measures against cyber-attacks. To prevent mass botting I will have to configure up a cloudflare preventive measure on the web page.
+This will require me to have a SQL Server what will store the account numbers. The account numbers will be randomly generated 32 character long number this makes sure for full authentication from brute force attacks and there will not be any stored passwords on the user as they will log in via their account number. A hosting service to host my web page on, a DNS server. And preventive measures against cyber-attacks. To prevent mass botting I will have to configure up a Cloudflare preventive measure on the web page.
 
 <h1>Skills Needed</h1>
 
@@ -19,4 +19,8 @@ HTML
 CSS
 JavaScript
 Networking
+
+<h1>Web Hosting Service</h1>
+
+For my web hosting service I'm going to use, Hostinger as it offers some good deals with additional measures in security such as Cloudflare, Privacy protection on whois lookup and standard DDoS protection. These are extremely useful for the blog site I am going to create. The plan I'm going to take is the Business which is currently offered at £3.79 due to huge discount when price is increased I may change my host as I do not want to pay, 11.99 Monthly for server I will not make money off. It also provides 3 Months free this is extremely useful for me and nice for testing purposes without being on clock worrying about the next transaction for the up-coming 3 months.
 
