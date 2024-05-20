@@ -24,3 +24,19 @@ Networking
 
 For my web hosting service I'm going to use, Hostinger as it offers some good deals with additional measures in security such as Cloudflare, Privacy protection on whois lookup and standard DDoS protection. These are extremely useful for the blog site I am going to create. The plan I'm going to take is the Business which is currently offered at £3.79 due to huge discount when price is increased I may change my host as I do not want to pay, 11.99 Monthly for server I will not make money off. It also provides 3 Months free this is extremely useful for me and nice for testing purposes without being on clock worrying about the next transaction for the up-coming 3 months.
 
+<h1>Sections</h1>
+
+About Page
+Home Page
+Your Security Page
+Sign-Up Page
+Login Page
+
+<h1>Section Details</h1>
+
+About Page - This will contain information about creation of this blog site, it's purpose and other information on how to contact if there are any problems.
+Home Page - This will be page you see when logged in this will allow you to create your own posts and share your post with other individuals (Unsure if I should add follow. based system)
+Your Security Page - This will tell you security of site and how it prevents you from having your information taken if ever a databreach and the reason behind our anonymity.
+Sign-Up Page - This will let you sign up for an account where you'll recieve an account number which will be used to log you in.
+Login Page - This is where you will sign in using the account number you was given.
+
