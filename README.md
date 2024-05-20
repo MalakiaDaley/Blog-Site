@@ -40,3 +40,6 @@ Your Security Page - This will tell you security of site and how it prevents you
 Sign-Up Page - This will let you sign up for an account where you'll recieve an account number which will be used to log you in.
 Login Page - This is where you will sign in using the account number you was given.
 
+<h1>Colour Scheme</h1>
+
+I want my blog to use same type of theme as vscode dark high contrast and use more Scifi type colours with black theme while also seeming extremely modern and appealing to the user. I do want to make this customizable, but that may be for later on.
