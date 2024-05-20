@@ -14,7 +14,7 @@ This will require me to have a SQL Server what will store the account numbers. T
 <h1>Skills Needed</h1>
 
 SQL
-Cyber Security
+Cybersecurity
 HTML
 CSS
 JavaScript
