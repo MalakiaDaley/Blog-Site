@@ -22,7 +22,9 @@ Networking
 
 <h1>Web Hosting Service</h1>
 
-For my web hosting service I'm going to use, Hostinger as it offers some good deals with additional measures in security such as Cloudflare, Privacy protection on whois lookup and standard DDoS protection. These are extremely useful for the blog site I am going to create. The plan I'm going to take is the Business which is currently offered at £3.79 due to huge discount when price is increased I may change my host as I do not want to pay, 11.99 Monthly for server I will not make money off. It also provides 3 Months free this is extremely useful for me and nice for testing purposes without being on clock worrying about the next transaction for the up-coming 3 months.
+<s>For my web hosting service I'm going to use, Hostinger as it offers some good deals with additional measures in security such as Cloudflare, Privacy protection on whois lookup and standard DDoS protection. These are extremely useful for the blog site I am going to create. The plan I'm going to take is the Premium which is currently offered at £3.79 due to huge discount when price is increased I may change my host as I do not want to pay, 11.99 Monthly for server I will not make money off. It also provides 3 Months free this is extremely useful for me and nice for testing purposes without being on clock worrying about the next transaction for the up-coming 3 months.</s>
+
+I was originally going to use Hostinger until I got to checkout and realized it was 48 month based plan where I had to pay total of £30+. I swapped to service known as fasthost what provide free 1 year domain an SSL Certificate. Considering the price of £2.14 this was amazing deal which is well worth value as domains can be priced at £8+ and including SSL certificate is great value and provides secure encryption of network traffic.
 
 <h1>Sections</h1>
 
@@ -47,3 +49,11 @@ I want my blog to use same type of theme as vscode dark high contrast and use mo
 <h1>What Do I Gain From This?</h1>
 
 Gain from this, I will learn more about subjects of web development I did not know before, better styling techniques, using SQL in JavaScript I hope to learn an astonishing amount of new things while building this project about networking, cybersecurity and DNS. And it gives me fun challenge to make and display to my College and get feedback on backend correlated things and styling techniques. This will also educate me on how sizing for different monitors work as that's crucial skill I have been trying to work on for a long period of time.
+
+<h1>Getting SSL</h1>
+
+Trying to get an SSL is learning experience as I have never tapped into CSR code and other information correlated so I had to learn information on how to set one up make a public key and other correlated things to getting an SSL.
+
+<h1>Web Domain</h1>
+
+someblogagain.co.uk
