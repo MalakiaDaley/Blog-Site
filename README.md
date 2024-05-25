@@ -58,6 +58,10 @@ Gain from this, I will learn more about subjects of web development I did not kn
 
 Trying to get an SSL is learning experience as I have never tapped into CSR code and other information correlated so I had to learn information on how to set one up make a public key and other correlated things to getting an SSL.
 
+<h1>Configurations</h1>
+
+For my server hosting on my vps I was using apache2 on a Ubuntu operating system. I configured up the SSL .key, .cer and .crt files up from the previous ssl certificate I recieved this made sure to keep my site secure. In addition to this I added .htaccess file to manage errors and other problems what may need fixing this helped to redirect users to the correct page if they went on to a page what did not exist. I also configured up in the apache configurations of domain my directory configurations and made sure to prevent my files being listed out when web page does not have index.html this will prevent people from browsing the files of the server. I also add redirect configuration to http version of the web page this is to prevent the user browsing on unencrypted version of the site, so we redirect the user to the https version.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
