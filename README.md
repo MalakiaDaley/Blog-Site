@@ -64,7 +64,7 @@ For my server hosting on my vps I was using apache2 on a Ubuntu operating system
 
 <h1>The Backend</h1>
 
-When I first started the project I was going to use PHP but as I was clueless and did not know exactly how to use it or configure it I moved on and found other methods, I used express a node.js module which allows us to create routes and our own APIs using this I made a create account route so then everything is handled on the server. I then added a rate-limit using the express-rate-limit to prevent overuse of this route and preventing the server from being flooded with requests from bad actors.
+When I first started the project I was going to use PHP but as I was clueless and did not know exactly how to use it or configure it I moved on and found other methods, I used express a node.js module which allows us to create routes and our own APIs using this I made a create account route so then everything is handled on the server. I then added a rate-limit using the express-rate-limit to prevent overuse of this route and preventing the server from being flooded with requests from bad actors. As I am using a database on SQL server I needed to also use the mysql module which was very simplistic to work with.
 
 <h1>Web Domain</h1>
 
