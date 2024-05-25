@@ -62,6 +62,10 @@ Trying to get an SSL is learning experience as I have never tapped into CSR code
 
 For my server hosting on my vps I was using apache2 on a Ubuntu operating system. I configured up the SSL .key, .cer and .crt files up from the previous ssl certificate I recieved this made sure to keep my site secure. In addition to this I added .htaccess file to manage errors and other problems what may need fixing this helped to redirect users to the correct page if they went on to a page what did not exist. I also configured up in the apache configurations of domain my directory configurations and made sure to prevent my files being listed out when web page does not have index.html this will prevent people from browsing the files of the server. I also add redirect configuration to http version of the web page this is to prevent the user browsing on unencrypted version of the site, so we redirect the user to the https version.
 
+<h1>The Backend</h1>
+
+When I first started the project I was going to use PHP but as I was clueless and did not know exactly how to use it or configure it I moved on and found other methods, I used express a node.js module which allows us to create routes and our own APIs using this I made a create account route so then everything is handled on the server. I then added a rate-limit using the express-rate-limit to prevent overuse of this route and preventing the server from being flooded with requests from bad actors.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
