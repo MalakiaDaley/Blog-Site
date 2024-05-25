@@ -26,6 +26,10 @@ Networking
 
 I was originally going to use Hostinger until I got to checkout and realized it was 48 month based plan where I had to pay total of £30+. I swapped to service known as fasthost what provide free 1 year domain an SSL Certificate. Considering the price of £2.14 this was amazing deal which is well worth value as domains can be priced at £8+ and including SSL certificate is great value and provides secure encryption of network traffic.
 
+<h1>Web Hosting Service Issues</h1>
+
+When I was using fasthost the plan I was on was a shared web host meaning I had limited access, this meant I had access to tools such as ftp, ssh and so on but, I did not have root access as there was other customers on this plan meaning I could not install note on to backend so I had to swap to their VPS offer which was astonishingly cheap. The vps was extremely ease-of-access and fasthost allows the user to change where the domain they got points to meaning I reconfigured my dns to point to my VPS. I then had to host apache2 on my VPS and start porting over my files from previously to the new location.
+
 <h1>Sections</h1>
 
 About Page
