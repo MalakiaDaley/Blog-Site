@@ -1121,3 +1121,6 @@ node_modules/vary/README.md
 Webfiles/package-lock.json
 *.json
 Webfiles/package-lock.json
+Webfiles/package-lock.json
+Webfiles/package.json
+Webfiles/index.js
