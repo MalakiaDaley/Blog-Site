@@ -66,6 +66,10 @@ For my server hosting on my vps I was using apache2 on a Ubuntu operating system
 
 When I first started the project I was going to use PHP but as I was clueless and did not know exactly how to use it or configure it I moved on and found other methods, I used express a node.js module which allows us to create routes and our own APIs using this I made a create account route so then everything is handled on the server. I then added a rate-limit using the express-rate-limit to prevent overuse of this route and preventing the server from being flooded with requests from bad actors. As I am using a database on SQL server I needed to also use the mysql module which was very simplistic to work with.
 
+<h1>Trial And Error SQL</h1>
+
+When making the backend functions to get users posts, to get certain amount of posts and so on i came accross a huge issue when using the old way of node using require. The mysql I was using was also extremely ineffecient at handling things. When trying to wait for querys to finish it was extremely problematic and quickly got complex when trying to async / await things. I ended up swapping from basic js to module type so my scripts was more up-to-date and then swapped to mysql2 where I then changed a bunch of default configurations and was able to use await and async with ease to get user data. While in process of discovering this I tried numerous modules however they all was not the most pleasant to work with.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
