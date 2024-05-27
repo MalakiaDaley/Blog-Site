@@ -1,15 +1,4 @@
 
-<script>
-
-async function createAccount() {
-    const response = await fetch("https://someblogagain.co.uk/api/create", {
-        method:"POST"
-    })
-    const data = await response.json();
-    console.log(data)
-}
-
-</script>
 
 <html>
     <head>
@@ -48,5 +37,15 @@ async function createAccount() {
             <p>Your Account Number: <span style="color: blue" id="account-number"></span></p>
         </div>
 
+        
+        <script>
+
+            const queryString = window.location.search;
+            let accNumber = queryString.split("=")[1]
+            
+            const accElement = document.getElementById("account-number")
+            accElement.textContent = `${accNumber}`
+            
+        </script>
     </body>
 </html>
