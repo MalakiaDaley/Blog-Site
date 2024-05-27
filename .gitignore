@@ -1,5 +1,7 @@
 
 Webfiles/JS/index.js
+Webfiles/JS/routes/accountroute.js
+Webfiles/JS/routes/blogroute.js
 Webfiles/node_modules/.bin/mime
 Webfiles/node_modules/.bin/mime.cmd
 Webfiles/node_modules/.bin/mime.ps1
