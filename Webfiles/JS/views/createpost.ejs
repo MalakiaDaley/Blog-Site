@@ -1,0 +1,57 @@
+
+<script>
+
+    function logout() {
+        const request = fetch("https://someblogagain.co.uk/api/logout", {
+            method:"GET"
+        })
+    }
+
+    async function createPost() {
+        
+        
+    }
+    
+</script>
+    
+<html>
+    <head>
+        <title>Create A Post</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- W3schools.CSS IMPORTS -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    </head>
+
+    <body class="w3-black w3-border w3-border-Indigo">
+        <div class="navigationElements">
+            <div class="w3-bar w3-black w3-border-bottom w3-border-Indigo" id="navigation">
+                <span class="w3-bar-item w3-border-right w3-border-Indigo">Someblogagain</span>
+                <a href="home" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition:0.5s">Home</a>
+                <a href="index" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" onclick="logout()" style="transition:0.5s">Log Out</a>
+            </div>
+    
+            <div class="w3-bar w3-black w3-border-top w3-border-Indigo" id="footer" style="position:fixed; bottom:0;">
+                <span class="w3-bar-item w3-border-right w3-border-Indigo" style="font-size:14px;">someblogagain built as college project.</span>
+                <span class="w3-bar-item w3-border-right w3-border-Indigo" style="font-size:14px;">Email: support@someblogagain.co.uk</span>
+                <a href="https://github.com/MalakiaDaley/Blog-Site" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition: 0.5s;">GitHub</a>
+                <a href="security" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition:0.5s">Security</a>
+            </div>
+        </div>
+        
+        <div class="w3-center"; style="padding: 40px 40px 40px 40px;">
+            <h2>Create A Post</h2>
+            <p>When making a post please check if your post is allowed and does not break any rules at someblogagain.co.uk/tos.
+            </p>
+            <label for="content">Content:</label>
+            <Br>
+            <textarea id="content" style="width:100%; height:50%; text-align: left; overflow: auto; resize:none" class="w3-black w3-border w3-border-Indigo"></textarea>
+            <br>
+            <div id="error" style="color:red; display:none">Special characters detected.</div>
+            <br>
+            <button style="background-color: transparent; border: 0px; color: white; transition: 0.5s; padding:10px 40px 10px 40px" class="w3-hover-Indigo w3-border w3-border-Indigo" onclick="createAccount();">Create</button>
+           </form>
+        </div>
+
+    </body>
+</html>
