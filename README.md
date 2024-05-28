@@ -70,6 +70,15 @@ When I first started the project I was going to use PHP but as I was clueless an
 
 When making the backend functions to get users posts, to get certain amount of posts and so on i came accross a huge issue when using the old way of node using require. The mysql I was using was also extremely ineffecient at handling things. When trying to wait for querys to finish it was extremely problematic and quickly got complex when trying to async / await things. I ended up swapping from basic js to module type so my scripts was more up-to-date and then swapped to mysql2 where I then changed a bunch of default configurations and was able to use await and async with ease to get user data. While in process of discovering this I tried numerous modules however they all was not the most pleasant to work with.
 
+<h1>Structure</h1>
+
+When making this, I made it as college project just for fun however I still wanted an extent of proffesional handling of things. This included fully structured site in proffesional way what makes sense and has eloborations on what each structure contains.
+
+Routes is for handling of requests to there said route this handles get requests, post requests and returns back json payloads.
+Views stores web pages which I want to be rendered inside of site this is used for double authentication checks throughout the code
+Functions this stores functions for there said page this is to break down code and not handle everything in one specific file
+Errors this is html for errors what may occur throughout the code.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
