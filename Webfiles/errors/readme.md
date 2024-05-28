@@ -1,0 +1,1 @@
+The errors of site what will be displayed depending on the status code.
