@@ -8,8 +8,17 @@
     }
 
     async function createPost() {
-        
-        
+        const request = fetch("https://someblogagain.co.uk/api/createpost", {
+            method:"POST",
+            body: JSON.stringify({
+                content:document.getElementById("content").value
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+
+        window.location.href = "https://someblogagain.co.uk/home"
     }
     
 </script>
@@ -28,7 +37,7 @@
             <div class="w3-bar w3-black w3-border-bottom w3-border-Indigo" id="navigation">
                 <span class="w3-bar-item w3-border-right w3-border-Indigo">Someblogagain</span>
                 <a href="home" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition:0.5s">Home</a>
-                <a href="index" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" onclick="logout()" style="transition:0.5s">Log Out</a>
+                <a href="/" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" onclick="logout()" style="transition:0.5s">Log Out</a>
             </div>
     
             <div class="w3-bar w3-black w3-border-top w3-border-Indigo" id="footer" style="position:fixed; bottom:0;">
@@ -49,8 +58,7 @@
             <br>
             <div id="error" style="color:red; display:none">Special characters detected.</div>
             <br>
-            <button style="background-color: transparent; border: 0px; color: white; transition: 0.5s; padding:10px 40px 10px 40px" class="w3-hover-Indigo w3-border w3-border-Indigo" onclick="createAccount();">Create</button>
-           </form>
+            <button style="background-color: transparent; border: 0px; color: white; transition: 0.5s; padding:10px 40px 10px 40px" class="w3-hover-Indigo w3-border w3-border-Indigo" onclick="createPost();">Create</button>
         </div>
 
     </body>
