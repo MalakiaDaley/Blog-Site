@@ -79,6 +79,20 @@ Views stores web pages which I want to be rendered inside of site this is used f
 Functions this stores functions for there said page this is to break down code and not handle everything in one specific file
 Errors this is html for errors what may occur throughout the code.
 
+<h1>Fixing Up The API</h1>
+
+When I designed the systems up for login, signup and so on, I used apache2 ProxyPass for /api this was terrible idea what I did not notice at the time. This caused numerous issues and as I wanted specific pages you can only authenticate to have access to this caused some collisions as I also made ProxyPass for /home and /createpost this was a TERRIBLE idea and caused overlapping issues where you could access the home via api as an example. This seemed, unproffesional and not appealing so I fixed this issue and rewrite how my ProxyPass was handled to just / this meant all my .html files was now partially useless, so I had to change the files to .ejs and make router for them in router folder and render all pages in. 
+
+Due to this huge change to api I had to make a lot changes throughout my routes to start with /api/ and make changes to other areas such as /profile as I thought my way of handling it before was dumb. To access users profile you'd have to do url/api/profile/ID this is unappealing and not good for proffesional use so when I made huge change on ProxyPass I adjusted it so now all you need is url/profile/ID this is more proffesional and easy to understand.
+
+While I was configuring up apache2 I made numerous mistakes what lead to many hours of solving problems which I thought was in my code some examples are
+ProxyPass / http://localhost:3000/
+
+This would mean to access page you'd have to do
+http://localhost:3000//pageURI
+
+this was stupid and this took me while to notice due to my level in apache2 and understanding the configs.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
