@@ -1130,10 +1130,11 @@ Webfiles/index.js
 /Webfiles/node_modules
 *.js
 *.js
-/Webfiles/routes
+/Webfiles/routes/accountroute.js
+/Webfiles/routes/blogroute.js
+/Webfiles/routes/homeroute.js
 *.js
 *.js
 *.js
-/Webfiles/routes
 Webfiles/index.js
 *.js
