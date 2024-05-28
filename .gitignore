@@ -1138,3 +1138,4 @@ Webfiles/index.js
 *.js
 Webfiles/index.js
 *.js
+/Webfiles/JS/node_modules
