@@ -1135,6 +1135,5 @@ Webfiles/index.js
 *.js
 *.js
 /Webfiles/routes
-/Webfiles
 Webfiles/index.js
 *.js
