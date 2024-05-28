@@ -1133,3 +1133,6 @@ Webfiles/index.js
 /Webfiles/routes
 *.js
 *.js
+*.js
+/Webfiles/routes
+/Webfiles
