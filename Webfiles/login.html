@@ -2,12 +2,30 @@
 <script>
 
     async function login() {
-        const current = `${document.getElementById('username').value}`
-        const response = await fetch(`https://someblogagain.co.uk/api/login?accountNumber=${current}`, {
-            method:"GET"
+        const current = document.getElementById('accountId').value
+        const response = await fetch(`https://someblogagain.co.uk/api/login`, {
+            method:"POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                accountNumber: current
+            })
         })
+        const status = await response.status;
+        
+        if (status == 200) {
+            window.location.href = `https://someblogagain.co.uk/home`
+        } else if (status==403) {
+            document.getElementById("error").textContent = "This account does not exist."
+            document.getElementById("error").style = "color:red"
+        } else if (status ==429) {
+            document.getElementById("error").textContent = "Ratelimited please wait."
+            document.getElementById("error").style = "color:red"
+        }
         const data = await response.json();
-        window.location.href = `https://someblogagain.co.uk/home`
+
+        
     }
     
     </script>
@@ -49,6 +67,7 @@
                 <Br>
                 <input text="text" id="accountId" class="w3-black w3-border w3-border-Indigo">
                 <br>
+                <div id="error" style="color:red; display:none">This account does not exist.</div>
                 <br>
                 <button style="background-color: transparent; border: 0px; color: white; transition: 0.5s; padding:10px 40px 10px 40px;" class="w3-hover-Indigo w3-border w3-border-Indigo" onclick="login();">Login</button>
                </form>
