@@ -103,6 +103,12 @@ Also, with the theme of special characters when signing up the user had option t
 
 '; drop table tableName;--
 
+<h1>Profile System</h1>
+
+The profile system was fairly straight forward to set up I simply added extra 2 columns to the table the users are stored which is for there about me and rank. I then programmed up some new routes to manage the profile such as updating about me and viewing others about me. I was able to set this up neatly and make new web pages for editprofile and view others profile and displayed users information nice and compact. It displays information username, userID and about. I plan to add a follow feature in future and display out posts the individual has posted.
+
+I also connected profiles to home page so when you click a users name who have made post it will take you directly to there profile. I do intend to make fully functional Search bar for users which will use the username this can be done via the SQL LIKE statement to find all possible results.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
