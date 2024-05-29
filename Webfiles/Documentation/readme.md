@@ -207,3 +207,44 @@ JSON RESPONSE<br>
 Unauthorised 403<br>
 error: You're not authorized to this page.<br>
 error: You cannot use special characters<br>
+
+<hr>
+
+<h3>/api/likepost</h3>
+
+Required Cookie: Authorization
+Content-Type: application/json
+
+<b>JSON FORMAT</b>
+<br>
+{
+    <br>
+    "postID": [Int.PostID]
+    <br>
+}
+
+<b>Return Value</b>
+<br>
+Success 200
+
+JSON RESPONSE<br>
+THIS IS IF YOU HAVEN'T LIKED POST PREVIOUSLY<Br>
+{
+    <br>
+    "status": "Liked Post"
+    <br>
+}
+
+IF THE POST WAS ALREADY LIKED
+{
+    <br>
+    "status": "Removed Like"
+    <br>
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: You're not authorized to this page.<br>
