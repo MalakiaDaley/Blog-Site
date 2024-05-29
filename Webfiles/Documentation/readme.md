@@ -16,6 +16,7 @@ When accessing restricted pages such as /home /profile and others you'll need to
     <li><a href="#apilogout">API Logout</a></li>
     <li><a href="#apiprofileuserid">API Profile Information</a></li>
     <li><a href="#apigetposts">API Get Posts</a></li>
+    <li><a href="#apicreatepost">API Create Post</a></li>
 </ul>
 
 <h3>/api</h3>
@@ -172,3 +173,37 @@ JSON RESPONSE
 
 Unauthorised 403<br>
 error: You're not authorized to this page.<br>
+
+<hr>
+
+<h3>/api/createpost</h3>
+
+Required Cookie: Authorization
+Content-Type: application/json
+
+<b>JSON FORMAT</b>
+<br>
+{
+    <br>
+    "content": [String.Content]
+    <br>
+}
+
+<b>Return Value</b>
+<br>
+Success 200
+
+JSON RESPONSE<br>
+{
+    <br>
+    "status": "created
+    <br>
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: You're not authorized to this page.<br>
+error: You cannot use special characters<br>
