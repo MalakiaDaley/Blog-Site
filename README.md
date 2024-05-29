@@ -97,6 +97,12 @@ this was stupid and this took me while to notice due to my level in apache2 and 
 
 Prevention of cross site scripting attack during the process of making signup and the create post page one of the biggest concerns was the XSS vulnerability popping up, so after a lot testing I discovered it was possible. So I tried to counter it via regex strings however they're not very effective if there's also a string letter in there. This caused problems trying to originally find good regex string in the end it would be easier for me to make a huge list of every special character and loop through as the account creation etc is handled on the backend this will not injure the loading speed of website and processing speed. Furthermore, for posts I noticed I was changing the innerHTML of the divs this was serious vulnerability as this still leaves it open for XSS, I solved this by simply changing to .innerText this prevented the rendering of elements such as buttons and so on before I had made a special character detection.
 
+<h1>Preventing SQL Injection</h1>
+
+Also, with the theme of special characters when signing up the user had option to create a username this username box could be used to an extent for sql injection. SQL injection would be data compromising and could result in data loss and more. I countered SQL Injection with special character detection preventing and sort of ' and so on from breaking out of the string to insert sql querys examples below.
+
+'; drop table tableName;--
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
