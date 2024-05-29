@@ -14,6 +14,8 @@ When accessing restricted pages such as /home /profile and others you'll need to
     <li><a href="#apilogin">API Login</a></li>
     <li><a href="#apicreate">API Create Account</a></li>
     <li><a href="#apilogout">API Logout</a></li>
+    <li><a href="#apiprofileuserid">API Profile Information</a></li>
+    <li><a href="#apigetposts">API Get Posts</a></li>
 </ul>
 
 <h3>/api</h3>
