@@ -95,8 +95,36 @@ Success 200
 
 <br>
 JSON RESPONSE
+<br>
 {
+    <br>
     "status": true
+    <br>
 }
 
 <hr>
+
+<b>/api/profile/userID</b>
+
+Required Cookie: Authorization
+
+<b>Return Value</b>
+
+Success 200
+
+<br>
+JSON RESPONSE
+{
+    "posts": [Array.Posts],
+    "username": [String.Username],
+    "bio": [String.Bio],
+    "rank": [String.Rank]
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: User does not exist.<br>
+error: You're not authorized to this page.<br>
