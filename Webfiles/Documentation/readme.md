@@ -34,8 +34,8 @@ JSON RESPONSE
 
 Errors
 
-Unauthorised 403
-error: Incorrect Account Number
-error: Account Number is empty
-error: Account number contains forbidden characters
-error: Incorrect Account Number
+Unauthorised 403<br>
+error: Incorrect Account Number<br>
+error: Account Number is empty<br>
+error: Account number contains forbidden characters<br>
+error: Incorrect Account Number<br>
