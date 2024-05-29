@@ -116,9 +116,6 @@ Success 200
 JSON RESPONSE
 {
     "posts": [Array.Posts],
-    "username": [String.Username],
-    "bio": [String.Bio],
-    "rank": [String.Rank]
 }
 
 <hr>
@@ -127,4 +124,38 @@ JSON RESPONSE
 
 Unauthorised 403<br>
 error: User does not exist.<br>
+error: You're not authorized to this page.<br>
+
+<hr>
+
+<b>/api/getposts</b>
+
+Required Cookie: Authorization
+Content-Type: application/json
+
+<b>JSON FORMAT</b>
+
+{
+    <br>
+    "limit": [IntValue]
+    <br>
+}
+
+<b>Return Value</b>
+Success 200
+
+JSON RESPONSE
+{
+    <br>
+    "posts": [Array.Posts]
+    <br>
+}
+
+<br>
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
 error: You're not authorized to this page.<br>
