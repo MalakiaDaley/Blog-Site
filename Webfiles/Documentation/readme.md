@@ -82,3 +82,21 @@ Unauthorised 403<br>
 error: You have not provided a username.<br>
 error: User already exists<br>
 error: You cannot use special characters
+
+<hr>
+
+<b>/api/logout</b>
+
+Content-Type: application/json
+
+<b>Return Value</b>
+
+Success 200
+
+<br>
+JSON RESPONSE
+{
+    "status": true
+}
+
+<hr>
