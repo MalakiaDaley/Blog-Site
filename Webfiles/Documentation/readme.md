@@ -115,7 +115,9 @@ Success 200
 <br>
 JSON RESPONSE
 {
+    <br>
     "posts": [Array.Posts],
+    <br>
 }
 
 <hr>
@@ -134,7 +136,7 @@ Required Cookie: Authorization
 Content-Type: application/json
 
 <b>JSON FORMAT</b>
-
+<br>
 {
     <br>
     "limit": [IntValue]
@@ -142,6 +144,7 @@ Content-Type: application/json
 }
 
 <b>Return Value</b>
+<br>
 Success 200
 
 JSON RESPONSE
