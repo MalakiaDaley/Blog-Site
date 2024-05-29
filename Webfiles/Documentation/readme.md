@@ -8,6 +8,12 @@ This is documentation what contains the API behind someblogagain.co.uk what I ma
 
 When accessing restricted pages such as /home /profile and others you'll need to pass a Authorization cookie. You can get this via inspect element go to application, cookies then look at site cookes for Authorization.
 
+<h2>Content</h2>
+
+<ul>
+    <li><a href="#apilogin">API Login</a></li>
+</ul>
+
 <h3>/api</h3>
 
 The /api URI contains access to numerous routes to login, create and so on all headers needed will be provided and the return values
