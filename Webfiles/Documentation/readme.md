@@ -18,18 +18,18 @@ The /api URI contains access to numerous routes to login, create and so on all h
 
 Content-Type: application/json
 JSON FORMAT
-
+<br>
 {
-    "accountNumber": [IntValue.AccountNumber]
+    "accountNumber": [IntValue.AccountNumber]<br>
 }
-
+<br>
 <b>Return Value</b>
 
 Success 200
 
-COOKIES RESPONSE
-{
-    "cookie": "Authorization=[Token]"
+COOKIES RESPONSE<br>
+{<br>
+    "cookie": "Authorization=[Token]"<br>
 }
 
 JSON RESPONSE
