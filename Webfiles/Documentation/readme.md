@@ -31,9 +31,10 @@ Success 200
 
 COOKIES RESPONSE<br>
 {<br>
-    "cookie": "Authorization=[Token]"<br>
+    "cookie": "Authorization=[Token]"
+    <br>
 }
-
+<br>
 JSON RESPONSE
 {
     "status": true
@@ -50,3 +51,34 @@ error: Account number contains forbidden characters<br>
 error: Incorrect Account Number<br>
 
 <hr>
+
+<b>/api/create</b>
+
+Content-Type: application/json
+JSON FORMAT
+<br>
+{
+    <br>
+    "username": "String.Username"
+    <br>
+}
+<br>
+
+<b>Return Value</b>
+
+Success 200
+
+<br>
+JSON RESPONSE
+{
+    "accountNumber": [IntValue.AccountNumber]
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: You have not provided a username.<br>
+error: User already exists<br>
+error: You cannot use special characters
