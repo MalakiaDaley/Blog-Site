@@ -9,7 +9,8 @@
         const data = await response.json();
         const status = await response.status;
         if (status==403) {
-            const errorElement = document.getElementById("error").style = "color:red"
+            var errorElement = document.getElementById("error").style = "color:red"
+            errorElement = document.getElementById("error").innerText = `${data.error}`
         } else {
             window.location.href = `https://someblogagain.co.uk/registered?accountNumber=${data.accountNumber}`
         }
@@ -23,7 +24,13 @@
         <title>Sign Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="navigation.css">
+        <style>
+		#footer {
+    			position: fixed;
+    			bottom: 0;
+		}
+	</style>
+
         <!-- W3schools.CSS IMPORTS -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
