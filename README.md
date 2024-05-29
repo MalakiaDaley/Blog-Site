@@ -9,7 +9,7 @@ I will make this blog able to make posts anonymously without any attached locati
 
 <h1>Requirements</h1>
 
-This will require me to have a SQL Server what will store the account numbers. The account numbers will be randomly generated 32 character long number this makes sure for full authentication from brute force attacks and there will not be any stored passwords on the user as they will log in via their account number. A hosting service to host my web page on, a DNS server. And preventive measures against cyber-attacks. To prevent mass botting I will have to configure up a Cloudflare preventive measure on the web page.
+This will require me to have a SQL Server what will store the account numbers. The account numbers will be randomly generated 8-12bit character long number this makes sure for full authentication from brute force attacks and there will not be any stored passwords on the user as they will log in via their account number. A hosting service to host my web page on, a DNS server. And preventive measures against cyber-attacks. To prevent mass botting I will have to configure up a Cloudflare preventive measure on the web page.
 
 <h1>Skills Needed</h1>
 
