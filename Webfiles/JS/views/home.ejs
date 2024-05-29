@@ -82,7 +82,7 @@
                     const content = postData.content
                     const postID = postData.id
 
-                    const profileData = await fetch(`https://someblogagain.co.uk/profile/${author}`, {
+                    const profileData = await fetch(`https://someblogagain.co.uk/api/profile/${author}`, {
                         method:"POST"
                     })
                     const jsProfile = await profileData.json();
