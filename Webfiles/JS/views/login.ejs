@@ -17,13 +17,13 @@
         if (status == 200) {
             window.location.href = `https://someblogagain.co.uk/home`
         } else if (status==403) {
-            document.getElementById("error").textContent = "This account does not exist."
+            const data = await response.json()
+            document.getElementById("error").textContent = `${data.error}`
             document.getElementById("error").style = "color:red"
         } else if (status ==429) {
             document.getElementById("error").textContent = "Ratelimited please wait."
             document.getElementById("error").style = "color:red"
         }
-        const data = await response.json();
 
         
     }
@@ -34,8 +34,12 @@
         <head>
             <title>Login</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="index.css">
-            <link rel="stylesheet" href="navigation.css">
+        	<style>
+			#footer {
+    				position: fixed;
+    				bottom: 0;
+			}
+		</style>
             <!-- W3schools.CSS IMPORTS -->
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
