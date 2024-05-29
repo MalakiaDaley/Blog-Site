@@ -14,3 +14,28 @@ The /api URI contains access to numerous routes to login, create and so on all h
 
 <hr>
 
+/api/login
+
+Return Value
+
+Success 200
+
+COOKIES RESPONSE
+{
+    "cookie": "Authorization=[Token]"
+}
+
+JSON RESPONSE
+{
+    "status": true
+}
+
+<hr>
+
+Errors
+
+Unauthorised 403
+error: Incorrect Account Number
+error: Account Number is empty
+error: Account number contains forbidden characters
+error: Incorrect Account Number
