@@ -93,6 +93,10 @@ http://localhost:3000//pageURI
 
 this was stupid and this took me while to notice due to my level in apache2 and understanding the configs.
 
+<h1>Preventing XSS</h1>
+
+Prevention of cross site scripting attack during the process of making signup and the create post page one of the biggest concerns was the XSS vulnerability popping up, so after a lot testing I discovered it was possible. So I tried to counter it via regex strings however they're not very effective if there's also a string letter in there. This caused problems trying to originally find good regex string in the end it would be easier for me to make a huge list of every special character and loop through as the account creation etc is handled on the backend this will not injure the loading speed of website and processing speed. Furthermore, for posts I noticed I was changing the innerHTML of the divs this was serious vulnerability as this still leaves it open for XSS, I solved this by simply changing to .innerText this prevented the rendering of elements such as buttons and so on before I had made a special character detection.
+
 <h1>Web Domain</h1>
 
 someblogagain.co.uk
