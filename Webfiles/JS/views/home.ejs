@@ -92,8 +92,8 @@
                     newElement.id = `${postID}`
                     const utcDate = new Date(time);
 
-                    newElement.querySelector("#time").innerHTML = `${utcDate}`
-                    newElement.querySelector("#body").innerHTML = `${content}`
+                    newElement.querySelector("#time").innerText = `${utcDate}`
+                    newElement.querySelector("#body").innerText = `${content}`
                     newElement.querySelector("#likes").innerText = `Likes: ${likes}`
                     newElement.querySelector("#author").innerText = `${username}`
 
