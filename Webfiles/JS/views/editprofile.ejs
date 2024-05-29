@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Create A Post</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+		#footer {
+    			position: fixed;
+    			bottom: 0;
+		}
+	</style>
+
+        <!-- W3schools.CSS IMPORTS -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    </head>
+
+    <body class="w3-black w3-border w3-border-Indigo">
+        <div class="navigationElements">
+            <div class="w3-bar w3-black w3-border-bottom w3-border-Indigo" id="navigation">
+                <span class="w3-bar-item w3-border-right w3-border-Indigo">Someblogagain</span>
+                <a href="https://someblogagain.co.uk/home" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition:0.5s">Home</a>
+                <a href="https://someblogagain.co.uk/" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" onclick="logout()" style="transition:0.5s">Log Out</a>
+            </div>
+            <div id="userid" style="display:none"></div>
+            <div class="w3-bar w3-black w3-border-top w3-border-Indigo" id="footer" style="position:fixed; bottom:0;">
+                <span class="w3-bar-item w3-border-right w3-border-Indigo" style="font-size:14px;">someblogagain built as college project.</span>
+                <span class="w3-bar-item w3-border-right w3-border-Indigo" style="font-size:14px;">Email: support@someblogagain.co.uk</span>
+                <a href="https://github.com/MalakiaDaley/Blog-Site" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition: 0.5s;">GitHub</a>
+                <a href="https://someblogagain.co.uk/security" class="w3-bar-item w3-button w3-border-right w3-border-Indigo w3-hover-Indigo" style="transition:0.5s">Security</a>
+            </div>
+        </div>
+        
+        <div class="w3-border w3-border-Indigo w3-display-middle" style="margin-top:0px; width:40%">
+            <h3 id="profileName" class="w3-border-bottom w3-border-Indigo" style="text-align: center; padding-bottom: 20px;">Profile Name</h3>
+            <h3 id="rank" class="w3-border-bottom w3-border-Indigo" style="text-align: center; padding-bottom: 20px;">Rank: </h3>
+            <textarea id="about" class="w3-black w3-border w3-border-Indigo" style="margin-left:10px; margin-right:10px; resize:none; height:600px; width:98%"></textarea>
+            <center >
+                <div class="w3-border-top w3-border-Indigo" style="margin-top:20px">
+                    <a onclick="update()" class="w3-bar-item w3-button w3-border-right w3-border-left w3-border-Indigo w3-hover-Indigo" style="transition:0.5s; padding-top:10px; padding-bottom:10px">Save</a>
+                    <div style="color:red; display:none" class="w3-border-top w3-border-Indigo" id="error"></div>
+                </div>
+                
+            </center>
+           
+        </div>
+
+        <script>
+            async function load() {
+                const data = await fetch("https://someblogagain.co.uk/api/getuserID",
+                    {
+                        method:"POST",
+                    }
+                )
+
+                const userID = await data.json()
+                const response = await fetch(`https://someblogagain.co.uk/api/profile/${userID.accountID}`)
+                const js = await response.json();
+
+                document.getElementById("profileName").innerText = js.username.username
+                document.getElementById("rank").innerText = `Rank: ${js.rank}`
+                document.getElementById("userid").innerText = `${userID.accountID}`
+            }
+
+            async function update() {
+                const data = await fetch("https://someblogagain.co.uk/api/update",
+                    {
+                        method:"POST",
+                        body: JSON.stringify({
+                            about:document.getElementById("about").value
+                        }),
+                        headers: {
+                            "Content-Type": "application/json"
+                        }
+                    }
+                )
+                if (data.status == 403) {
+                    const jsData = await data.json()
+                    document.getElementById("error").innerText = jsData.error;
+                    document.getElementById("error").style = "color:red;"
+                } else if (data.status == 200) {
+                    window.location.href = `https://someblogagain.co.uk/profile/${document.getElementById("userid").innerText}`
+                }
+            }
+
+            load()
+        </script>
+
+    </body>
+</html>
