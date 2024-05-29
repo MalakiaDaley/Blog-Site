@@ -14,9 +14,16 @@ The /api URI contains access to numerous routes to login, create and so on all h
 
 <hr>
 
-/api/login
+<b>/api/login</b>
 
-Return Value
+Content-Type: application/json
+JSON FORMAT
+
+{
+    "accountNumber": [IntValue.AccountNumber]
+}
+
+<b>Return Value</b>
 
 Success 200
 
@@ -32,10 +39,12 @@ JSON RESPONSE
 
 <hr>
 
-Errors
+<b>Errors</b>
 
 Unauthorised 403<br>
 error: Incorrect Account Number<br>
 error: Account Number is empty<br>
 error: Account number contains forbidden characters<br>
 error: Incorrect Account Number<br>
+
+<hr>
