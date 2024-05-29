@@ -20,7 +20,9 @@ Content-Type: application/json
 JSON FORMAT
 <br>
 {
-    "accountNumber": [IntValue.AccountNumber]<br>
+    <br>
+    "accountNumber": [IntValue.AccountNumber]
+    <br>
 }
 <br>
 <b>Return Value</b>
