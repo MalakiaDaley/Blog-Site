@@ -18,6 +18,8 @@ When accessing restricted pages such as /home /profile and others you'll need to
     <li><a href="#apigetposts">API Get Posts</a></li>
     <li><a href="#apicreatepost">API Create Post</a></li>
     <li><a href="#apilikepost">API Like Post</a></li>
+    <li><a href="#apiupdate">API Edit Profile</a></li>
+    <li><a href="#apigetuserID">API Edit Profile</a></li>
 </ul>
 
 <h3>/api</h3>
@@ -240,6 +242,65 @@ IF THE POST WAS ALREADY LIKED
 {
     <br>
     "status": "Removed Like"
+    <br>
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: You're not authorized to this page.<br>
+
+<hr>
+
+<h3>/api/update</h3>
+
+Ratelimit: 20 Req/10mins
+Required Cookie: Authorization
+Content-Type: application/json
+
+<b>JSON FORMAT</b>
+<br>
+{
+    <br>
+    "about": [String.About]
+    <br>
+}
+
+<b>Return Value</b>
+<br>
+Success 200
+
+JSON RESPONSE<br>
+{
+    <br>
+    "status": "success"
+    <br>
+}
+
+<hr>
+
+<b>Errors</b>
+
+Unauthorised 403<br>
+error: You're not authorized to this page.<br>
+error: You cannot use special characters
+
+<hr>
+<h3>/api/getuserID</h3>
+
+Ratelimit: 20 Req/10mins
+Required Cookie: Authorization
+
+<b>Return Value</b>
+<br>
+Success 200
+
+JSON RESPONSE<br>
+{
+    <br>
+    "accountID": [Int.UserID]
     <br>
 }
 
