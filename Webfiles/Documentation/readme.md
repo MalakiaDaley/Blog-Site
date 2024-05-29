@@ -14,7 +14,7 @@ The /api URI contains access to numerous routes to login, create and so on all h
 
 <hr>
 
-<b>/api/login</b>
+<h3>/api/login</h3>
 
 Content-Type: application/json
 JSON FORMAT
@@ -52,7 +52,7 @@ error: Incorrect Account Number<br>
 
 <hr>
 
-<b>/api/create</b>
+<h3>/api/create</h3>
 
 Content-Type: application/json
 JSON FORMAT
@@ -85,7 +85,7 @@ error: You cannot use special characters
 
 <hr>
 
-<b>/api/logout</b>
+<h3>/api/logout</h3>
 
 Content-Type: application/json
 
@@ -104,7 +104,7 @@ JSON RESPONSE
 
 <hr>
 
-<b>/api/profile/userID</b>
+<h3>/api/profile/userID</h3>
 
 Required Cookie: Authorization
 
@@ -130,7 +130,7 @@ error: You're not authorized to this page.<br>
 
 <hr>
 
-<b>/api/getposts</b>
+<h3>/api/getposts</h3>
 
 Required Cookie: Authorization
 Content-Type: application/json
