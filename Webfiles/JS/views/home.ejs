@@ -121,7 +121,6 @@
 
             async function likepost(button) {
                 const parentID = button.parentNode.parentNode.id
-                window.location.href = "https://someblogagain.co.uk/home"
                 const response = await fetch("https://someblogagain.co.uk/api/likepost", {
                     method:"POST",
                     body: JSON.stringify({
@@ -131,8 +130,21 @@
                         "Content-Type":"application/json"
                     }
                 })
-                const data = await response.body
-                
+                const data = await response.json()
+                console.log(data)
+                if (data.status == "liked") {
+                    var likes = button.innerText.split(" ")[1]
+                    likes = Number(likes)
+                    console.log(likes)
+                    likes += 1
+                    button.innerText = likes;
+                } else {
+                    var likes = button.innerText.split(" ")[1]
+                    likes = Number(likes)
+                    console.log(likes)
+                    likes -= 1
+                    button.innerText = likes;
+                }
             }
             
             load();
